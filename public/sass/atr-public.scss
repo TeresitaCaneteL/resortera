@@ -1,0 +1,71 @@
+@import "abstracts/mixins";
+@import "abstracts/animation";
+@import "abstracts/variables";
+@import "layout/footer";
+@import "layout/sections";
+@import "layout/header";
+@import "base/typography";
+
+@import "components/alert";
+@import "components/breadcrumb";
+@import "components/button";
+@import "components/code";
+@import "components/dropdowns";
+@import "components/form";
+@import "components/media-object";
+@import "components/mouse";
+@import "components/navbar";
+@import "components/pagination";
+@import "components/progressbar";
+@import "components/scrollbar";
+@import "components/table";
+
+
+.demo-1 .main-title {
+      text-transform: uppercase;
+      font-size: 4.2em;
+      letter-spacing: 0.1em;
+    }
+
+    @media only screen and (max-width : 768px) {
+      .demo-1 .main-title {
+        font-size: 3em;
+      }
+
+    }
+
+    .main-title {
+      position: absolute;
+      margin: 0;
+      padding: 0;
+      color: #f9f1e9;
+      text-align: center;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate3d(-50%, -50%, 0);
+      transform: translate3d(-50%, -50%, 0);
+      font-size: 1000%;
+    }
+
+    .imglog {
+      position: absolute;
+      align-content: center;
+      max-width: 50%;
+      height: auto;
+
+    }
+
+    @media (max-width: 680px) {
+      .imglog {
+        position: absolute;
+        align-content: center;
+        max-width: 90%;
+        height: auto;
+
+      }
+    }
+
+///custom-nav
+#navbarSupportedContent{
+  justify-content: flex-end;
+}

@@ -1,0 +1,142 @@
+.navbar {
+    transition: all, 0.3s;
+
+    &.navbar-dark {
+
+        .navbar-brand {
+            color: $white;
+        }
+    }
+
+    &.navbar-light {
+
+        .navbar-brand {
+            color: $gray-900;
+        }
+    }
+
+    .navbar-brand {
+
+        img {
+            width: 60px;
+        }
+    }
+
+    .nav-link {
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    &.custom-navbar {
+        padding-top: $navbar-padding-y;
+        padding-bottom: 0.5rem;
+
+        .nav-link {
+            color: $white;
+            margin: 0 6px;
+
+            &:hover {
+                color: $white;
+            }
+        }
+
+        &.affix {
+            padding-top: $navbar-affix-padding-y;
+            padding-bottom: $navbar-affix-padding-y;
+            background: $white;
+            box-shadow: 0 1px 10px rgba($gray-400,.6);
+            border-bottom: 1px solid $border-color;
+
+            .nav-link {
+                color: $body-color;
+
+
+                &:hover {
+                    color: $black;
+                }
+            }
+        }
+    }
+}
+///custom-nav
+#navbarSupportedContent {
+  justify-content: flex-end;
+
+  a {
+    text-decoration: none;
+    color: $white;
+    font-family: "Comic Sans MS", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0 6px;
+
+  }
+
+  .nav-link {
+
+
+    &:hover {
+      color: $white;
+    }
+  }
+}
+  .is-sticky-menu {
+       position: fixed;
+       top: -1px;
+       left: 0;
+       right: 0;
+       width: 100%;
+       background: #fff !important;
+       z-index: 999;
+       -webkit-animation: 1s ease-in-out 0s normal none 1 running fadeInDown;
+       animation: 1s ease-in-out 0s normal none 1 running fadeInDown;
+       transition: 2ms;
+
+      #navbarSupportedContent a {
+         color: #000;
+       }
+     }
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0)
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0)
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+/* Estilos para los enlaces del menú en la página de entrada (single) */
+body.single-proyectos #navbarSupportedContent a {
+   color: #000!important;
+  /* Cambia este color al que desees */
+}
+
+body.single-proyectos #navbarSupportedContent a:hover {
+  color: #00FF00;
+  /* Cambia este color al que desees */
+}
