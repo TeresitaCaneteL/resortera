@@ -18,12 +18,5 @@ cd resortera
 
 ### Contribución
 ```
-Si deseas contribuir a este proyecto, sigue estos pasos:
 
-Haz un fork del proyecto.
-Crea una nueva rama para tu contribución:
-git checkout -b nueva-caracteristica.
-Realiza tus cambios y confirma: git commit -m 'Agrega nueva característica'.
-Haz push a tu rama: git push origin nueva-caracteristica.
-Crea un pull request en GitHub.
 ```
